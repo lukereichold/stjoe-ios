@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="a8x-L2-pD6">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--St. Joseph's Academy-->
+        <scene sceneID="WLV-iz-YYc">
+            <objects>
+                <viewController title="St. Joseph's Academy" id="a77-Gv-jfm" customClass="MainScreenIPAD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kt8-Gd-Bnb">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" id="HOK-tR-TF5">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="930"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="Xxe-Xx-Zek" userLabel="Buttons Container">
+                                        <rect key="frame" x="1" y="1" width="768" height="930"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="296-Tb-oAT" userLabel="Events">
+                                                <rect key="frame" x="0.0" y="0.0" width="768" height="132"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="Events_iPad_P.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadEvents:" destination="a77-Gv-jfm" eventType="touchUpInside" id="JXv-M1-m3B"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="uJI-5T-DmA" userLabel="Angel Power">
+                                                <rect key="frame" x="0.0" y="132" width="768" height="132"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="Angel-Power_iPad_P.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadAngelPower:" destination="a77-Gv-jfm" eventType="touchUpInside" id="VCG-V5-5hs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="bcv-hv-r5C" userLabel="Calendar">
+                                                <rect key="frame" x="0.0" y="264" width="768" height="132"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="Calendar_iPad_P.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadCalendar:" destination="a77-Gv-jfm" eventType="touchUpInside" id="dOf-ep-HSP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="vCD-Dq-RSo" userLabel="Alumnae">
+                                                <rect key="frame" x="0.0" y="396" width="768" height="132"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="Alumnae_iPad_P.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadAlumnae:" destination="a77-Gv-jfm" eventType="touchUpInside" id="Ly0-4n-YJK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="tef-OL-UeC" userLabel="In The Know">
+                                                <rect key="frame" x="0.0" y="528" width="768" height="132"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="In-the-Know_iPad_P.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadGame:" destination="a77-Gv-jfm" eventType="touchUpInside" id="nE3-RI-tmk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="fBR-pE-aMJ" userLabel="News">
+                                                <rect key="frame" x="0.0" y="660" width="768" height="132"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="News_iPad_P.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadNews:" destination="a77-Gv-jfm" eventType="touchUpInside" id="EZa-39-r6a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="0c9-m5-pBb" userLabel="Resources">
+                                                <rect key="frame" x="0.0" y="792" width="768" height="132"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="Resources_iPad_P.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadResources:" destination="a77-Gv-jfm" eventType="touchUpInside" id="lWG-IL-fbT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="320" height="800"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                            <view contentMode="scaleToFill" id="N0O-8Q-WGx">
+                                <rect key="frame" x="0.0" y="925" width="768" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47450980392156861" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="UPp-YA-mZ7"/>
+                    <connections>
+                        <outlet property="contentView" destination="Xxe-Xx-Zek" id="sbj-Oh-2MM"/>
+                        <outlet property="scrollView" destination="HOK-tR-TF5" id="pJ0-1Q-M00"/>
+                        <outletCollection property="buttonsCollection" destination="296-Tb-oAT" id="A2I-Pv-y2N"/>
+                        <outletCollection property="buttonsCollection" destination="uJI-5T-DmA" id="oeG-mz-2k0"/>
+                        <outletCollection property="buttonsCollection" destination="bcv-hv-r5C" id="9c7-EN-wia"/>
+                        <outletCollection property="buttonsCollection" destination="vCD-Dq-RSo" id="XZZ-dg-NHd"/>
+                        <outletCollection property="buttonsCollection" destination="tef-OL-UeC" id="xcH-ZF-ddI"/>
+                        <outletCollection property="buttonsCollection" destination="fBR-pE-aMJ" id="mym-sF-JXe"/>
+                        <outletCollection property="buttonsCollection" destination="0c9-m5-pBb" id="e5E-8b-y01"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9B-p4-jGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="-227"/>
+        </scene>
+        <!--St. Joseph's Academy-->
+        <scene sceneID="SOw-t0-chl">
+            <objects>
+                <navigationController title="St. Joseph's Academy" definesPresentationContext="YES" id="a8x-L2-pD6" customClass="RotatableNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nl9-mN-rkN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47450980390000003" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="a77-Gv-jfm" kind="relationship" relationship="rootViewController" id="YvU-sb-vbU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RH-4b-lsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1013" y="-227"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Alumnae_iPad_P.png" width="768" height="132"/>
+        <image name="Angel-Power_iPad_P.png" width="768" height="132"/>
+        <image name="Calendar_iPad_P.png" width="768" height="132"/>
+        <image name="Events_iPad_P.png" width="768" height="132"/>
+        <image name="In-the-Know_iPad_P.png" width="768" height="132"/>
+        <image name="News_iPad_P.png" width="768" height="132"/>
+        <image name="Resources_iPad_P.png" width="768" height="132"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

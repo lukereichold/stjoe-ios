@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Pja-ti-vhe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--St. Joseph's Academy-->
+        <scene sceneID="AtY-X2-81R">
+            <objects>
+                <viewController title="St. Joseph's Academy" id="Yc6-Ka-5aR" customClass="MainScreen" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="srS-bL-8ue"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Gb-1C-NWL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fxv-G2-dVs">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIF-6l-Xsl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JNw-AS-u2R" userLabel="Buttons Container">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="595"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQH-SN-A1D" userLabel="Events">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                                                <state key="normal" backgroundImage="Events_iPhone.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadEvents:" destination="Yc6-Ka-5aR" eventType="touchUpInside" id="rCg-Qk-ezV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7R-px-5uN" userLabel="Angel Power">
+                                                <rect key="frame" x="0.0" y="85" width="320" height="85"/>
+                                                <state key="normal" backgroundImage="Angel-Power_iPhone.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadAngelPower:" destination="Yc6-Ka-5aR" eventType="touchUpInside" id="Kek-zY-yho"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYY-SS-7pI" userLabel="Calendar">
+                                                <rect key="frame" x="0.0" y="170" width="320" height="85"/>
+                                                <state key="normal" backgroundImage="Calendar_iPhone.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadCalendar:" destination="Yc6-Ka-5aR" eventType="touchUpInside" id="FGz-3R-Bdx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXz-QQ-vos" userLabel="Alumnae">
+                                                <rect key="frame" x="0.0" y="255" width="320" height="85"/>
+                                                <state key="normal" backgroundImage="Alumnae_iPhone.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadAlumnae:" destination="Yc6-Ka-5aR" eventType="touchUpInside" id="4eY-G0-jKE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfr-KQ-Ibt" userLabel="In The Know">
+                                                <rect key="frame" x="0.0" y="340" width="320" height="85"/>
+                                                <state key="normal" backgroundImage="In-the-Know_iPhone.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadGame:" destination="Yc6-Ka-5aR" eventType="touchUpInside" id="cep-fv-5H7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcp-gv-c62" userLabel="News">
+                                                <rect key="frame" x="0.0" y="425" width="320" height="85"/>
+                                                <state key="normal" backgroundImage="News_iPhone.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadNews:" destination="Yc6-Ka-5aR" eventType="touchUpInside" id="jay-OD-fC5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6l3-MX-fg3" userLabel="Resources">
+                                                <rect key="frame" x="0.0" y="510" width="320" height="85"/>
+                                                <state key="normal" backgroundImage="Resources_iPhone.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadResources:" destination="Yc6-Ka-5aR" eventType="touchUpInside" id="phc-Tb-kOk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="320" height="800"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hh3-lj-Vza">
+                                <rect key="frame" x="0.0" y="474" width="320" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Gb-1C-NWL" firstAttribute="top" secondItem="kIF-6l-Xsl" secondAttribute="bottom" constant="30" id="CXH-Sd-f6I"/>
+                            <constraint firstItem="kIF-6l-Xsl" firstAttribute="top" secondItem="srS-bL-8ue" secondAttribute="bottom" id="nyc-RO-MCj"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="St. Joseph's Academy" id="i5a-3P-E3k"/>
+                    <connections>
+                        <outlet property="contentView" destination="JNw-AS-u2R" id="gtJ-xK-d2N"/>
+                        <outlet property="scrollView" destination="kIF-6l-Xsl" id="rn2-la-qaE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3B-ZJ-JYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="-213"/>
+        </scene>
+        <!--St. Joseph's Academy-->
+        <scene sceneID="qwx-2t-k6j">
+            <objects>
+                <navigationController title="St. Joseph's Academy" definesPresentationContext="YES" id="Pja-ti-vhe" customClass="RotatableNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R8U-mm-Bse">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47450980390000003" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Yc6-Ka-5aR" kind="relationship" relationship="rootViewController" id="7ob-3D-xAp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQZ-CD-2cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="-199"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Alumnae_iPhone.png" width="320" height="85"/>
+        <image name="Angel-Power_iPhone.png" width="320" height="85"/>
+        <image name="Calendar_iPhone.png" width="320" height="85"/>
+        <image name="Events_iPhone.png" width="320" height="85"/>
+        <image name="In-the-Know_iPhone.png" width="320" height="85"/>
+        <image name="News_iPhone.png" width="320" height="85"/>
+        <image name="Resources_iPhone.png" width="320" height="85"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" red="0.0" green="0.47450980392156861" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+</document>
